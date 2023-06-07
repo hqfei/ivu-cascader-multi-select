@@ -19193,7 +19193,7 @@ const install = Vue => {
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
-/* harmony default export */ __webpack_exports__["default"] = ({ install });
+/* harmony default export */ __webpack_exports__["default"] = ({ install, multiCascader: _index_vue__WEBPACK_IMPORTED_MODULE_0__["default"] });
 
 /***/ }),
 
