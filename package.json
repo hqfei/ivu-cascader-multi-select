@@ -1,12 +1,8 @@
 {
   "name": "ivu-cascader-multi-select",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "基于iView的级联多选",
   "main": "src/index.js",
-  "files": [
-    "dist/**/*",
-    "webpack.config.js"
-  ],
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress ",
     "dev": "webpack-dev-server --inline --progress"
