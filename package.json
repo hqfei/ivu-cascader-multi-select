@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "基于iView的级联多选",
   "main": "src/index.js",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress ",
     "dev": "webpack-dev-server --inline --progress"
