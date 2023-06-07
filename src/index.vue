@@ -79,7 +79,7 @@ import TreeStore from './lib/Tree.js'
 import renderList from './render-list.vue'
 import _ from 'lodash'
 export default {
-  name: 'iv-cascader-multi',
+  name: 'ivu-cascader-multi-select',
   components: {
     renderList
   },

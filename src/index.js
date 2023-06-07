@@ -1,9 +1,9 @@
-import multiCascader from './index.vue'
+import IvuCascaderMultiSelect from './index.vue'
 
 const install = (Vue) => {
-  Vue.component(multiCascader.name, multiCascader)
+  Vue.component(IvuCascaderMultiSelect.name, IvuCascaderMultiSelect)
 }
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
-export default { install, multiCascader }
+export default { install, IvuCascaderMultiSelect }
