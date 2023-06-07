@@ -1,36 +1,36 @@
 {
-  "name": "ivu-multi-cascader",
-  "version": "1.0.4",
+  "name": "ivu-cascader-multi-select",
+  "version": "1.0.0",
   "description": "基于iView的级联多选",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cross-env NODE_ENV=production webpack --progress "
+    "build": "cross-env NODE_ENV=production webpack --progress ",
+    "dev": "webpack-dev-server --inline --progress"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yangyfeng/ivu-multi-cascader.git"
+    "url": "git+https://github.com/hqfei/ivu-cascader-multi-select.git"
   },
   "keywords": [
     "view-design",
     "multi",
     "cascader"
   ],
-  "author": "yangyfeng <2021.09>",
-  "license": "ISC",
+  "author": "hqf <2023.06>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yangyfeng/ivu-multi-cascader/issues"
+    "url": "https://github.com/hqfei/ivu-cascader-multi-select/issues"
   },
-  "homepage": "https://github.com/yangyfeng/ivu-multi-cascader#readme",
+  "homepage": "https://github.com/hqfei/ivu-cascader-multi-select#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
-    "css-loader": "^1.0.0",
+    "css-loader": "^5.2.7",
     "express": "^4.16.3",
-    "less": "^4.1.1",
-    "less-loader": "^10.0.1",
+    "less": "^4.1.3",
+    "less-loader": "^7.3.0",
     "mini-css-extract-plugin": "^0.5.0",
-    "style-loader": "^3.2.1",
+    "style-loader": "^2.0.0",
     "vue-loader": "^15.2.6",
     "vue-style-loader": "^4.1.1",
     "vue-template-compiler": "^2.5.16",
