@@ -1,3 +1,6 @@
+**forked from https://github.com/yangyfeng/ivu-multi-cascader**
+更改了版本使得能够成功打包
+
 **Select Attributes**
 
 | 参数                | 说明                                                         | 类型     | 可选值                                                       | 默认值   |
