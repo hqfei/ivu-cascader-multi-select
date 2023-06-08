@@ -1,5 +1,8 @@
 **forked from https://github.com/yangyfeng/ivu-multi-cascader**
 更改了版本使得能够成功打包
+增加了showCheckAll选项
+修复了showNextIcon的问题
+调整了width和height
 
 **Select Attributes**
 
@@ -28,9 +31,7 @@
 | notSelectNext       | 设置上级的全选不用选择下一级的数据 false 不用选择下一级 true 必选选择下一级 | boolean | @todo                                                        | false    |
 | checkKey                     |  每一级别是否可以选择的数据字段，不填写默认显示选择框。tips: 只有在当前层级全部设置为true才会显示复选框和全选框。           | string | - | showCheck |
 | echoLabel | 是否要回显labels | array | - | [] |
-|                     |                                                              |          |                                                              |          |
-|                     |                                                              |          |                                                              |          |
-|                     |                                                              |          |                                                              |          |
+| showCheckAll        | 是否展示全选复选框                                          | boolean |                                              - | true |
 
 **Select Events**
 
