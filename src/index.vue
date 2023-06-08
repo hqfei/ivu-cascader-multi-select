@@ -48,7 +48,8 @@
                          @handle-check="handleCheck"
                          @handle-checkAll="handleCheckAll"
                          :label-key="labelKey"
-                         :expand-trigger="expandTrigger"></render-list>
+                         :expand-trigger="expandTrigger"
+                         :showCheckAll="showCheckAll"></render-list>
           </div>
           <template v-for="item in maxLevellist">
             <div v-if="item.rendered && showData[item.id].length"
@@ -65,7 +66,8 @@
                            @handle-check="handleCheck"
                            @handle-checkAll="handleCheckAll"
                            :label-key="labelKey"
-                           :expand-trigger="expandTrigger"></render-list>
+                           :expand-trigger="expandTrigger"
+                           :showCheckAll="showCheckAll"></render-list>
             </div>
           </template>
         </div>
@@ -212,6 +214,10 @@ export default {
     },
     // 是否允许父子联动
     selectChildren: {
+      type: Boolean,
+      default: true
+    },
+    showCheckAll: {
       type: Boolean,
       default: true
     }
@@ -691,8 +697,6 @@ export default {
 </script>
 <style lang="less" scoped>
 .multi-cascader {
-  width: 160px;
-  min-width: 160px;
   position: relative;
   /deep/ .ivu-dropdown {
     width: 100%;
@@ -717,7 +721,7 @@ export default {
 .labels {
   position: relative;
   overflow-y: auto;
-  max-height: 132px;
+  max-height: 80px;
   min-height: 32px;
   border-radius: 3px;
   border: 1px solid #dddddd;

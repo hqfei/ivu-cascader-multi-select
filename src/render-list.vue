@@ -1,6 +1,6 @@
 <template>
   <ul class="render-list">
-    <li v-if="!useMax && showCheckBox"
+    <li v-if="!useMax && showCheckBox && showCheckAll"
         class="li-style">
       <Checkbox ref="CheckAllRef"
                 style="margin-right: 5px"
@@ -87,6 +87,10 @@ export default {
     notUseAble: {
       type: Boolean,
       default: false
+    },
+    showCheckAll: {
+      type: Boolean,
+      default: true
     }
   },
   computed: {
@@ -115,7 +119,7 @@ export default {
       // 是不是最大层级了
       const canMax = this.maxRequest ? this.level >= this.maxRequest : false
       // 加载不显示 没有下一级不显示 最大层级了不显示
-      if (node.loading || !node.showExpIcon || canMax) {
+      if (node.loading || !node.showExpIcon || canMax || !(node.children && node.children.length)) {
         show = false
       }
       return show
